@@ -16,3 +16,30 @@ Left Join employees ON
 dept_manager.emp_no = employees.emp_no
 Left Join departments ON
 dept_manager.dept_no = departments.dept_no;
+
+-- department of each employee: employee number, last name, first name, and department name
+-- should this return ~300k (employees) results or 331k (dept_emp) results?
+Select employees.emp_no, employees.last_name, employees.first_name, departments.dept_name
+From employees
+left Join dept_emp ON
+employees.emp_no = dept_emp.emp_no
+left Join departments ON
+dept_emp.dept_no = departments.dept_no;
+
+-- first name is Hercules and last name begins with B: first name, last name, and sex
+Select employees.first_name, employees.last_name, employees.sex
+From employees
+Where first_name = 'Hercules' and last_name LIKE 'B%';
+
+-- sales dept employees: emp_no, last_name, first_name, department_name
+Select  employees.last_name, employees.first_name, departments.dept_name
+From employees
+Left Join dept_emp ON
+employees.emp_no = dept_emp.emp_no
+left Join departments ON
+dept_emp.dept_no = departments.dept_no
+Where departments.dept_name = 'Sales';
+
+-- sales & development dept employees: emp_no, last_name, first_name, department name
+
+-- frequency count of employee last names:  how many employees share each last name

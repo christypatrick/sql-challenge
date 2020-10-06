@@ -41,5 +41,12 @@ dept_emp.dept_no = departments.dept_no
 Where departments.dept_name = 'Sales';
 
 -- sales & development dept employees: emp_no, last_name, first_name, department name
+Select  employees.last_name, employees.first_name, departments.dept_name
+From employees
+Left Join dept_emp ON
+employees.emp_no = dept_emp.emp_no
+left Join departments ON
+dept_emp.dept_no = departments.dept_no
+Where departments.dept_name = 'Sales' OR departments.dept_name = 'Development';
 
 -- frequency count of employee last names:  how many employees share each last name

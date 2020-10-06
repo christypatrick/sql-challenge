@@ -50,3 +50,6 @@ dept_emp.dept_no = departments.dept_no
 Where departments.dept_name = 'Sales' OR departments.dept_name = 'Development';
 
 -- frequency count of employee last names:  how many employees share each last name
+Select last_name, count(last_name) as "Last Name Count"
+From employees
+Group by last_name;

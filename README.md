@@ -6,7 +6,7 @@ This research project examines corporate employee data from the 1980s and 1990s.
 
 
 ### Data Engineering
-![Employee ERD](Employee SQL/ERD - Employee SQL.jpg)
+![ERD - Employee SQL](Employee SQL/ERD - Employee SQL.jpg)
 
 Data Analysis
 

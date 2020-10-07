@@ -9,7 +9,7 @@ This research project examines corporate employee data from the 1980s and 1990s.
 ![ERD - Employee SQL](https://github.com/christypatrick/sql-challenge/blob/main/Employee%20SQL/ERD%20-%20Employee%20SQL.jpg)
 
 ### Data Analysis
-After loading the 6 csv files into the SQL database, the data was analyzed tp deterine the following:
+After loading the 6 csv files into the SQL database, the data was analyzed to deterine the following:
 * List the following details of each employee: employee number, last name, first name, sex, and salary.
 * List first name, last name, and hire date for employees who were hired in 1986.
 * List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.

@@ -24,9 +24,11 @@ After loading the 6 csv files into the SQL database, the data was analyzed to de
 Following the queries in SQL, the data was further analyzed using Python to determine common salary ranges for employees as well as average salaries by job title.
 
 Histogram - most common salary ranges for employees
+
 ![Histogram](https://github.com/christypatrick/sql-challenge/blob/main/Employee%20SQL/Employee%20Salary%20Ranges.png)
 
 Chart of average salary by title
+
 ![Average Salary](https://github.com/christypatrick/sql-challenge/blob/main/Employee%20SQL/Average%20Salary%20by%20Job%20Title.png)
 
 ### Conclusion

@@ -63,3 +63,5 @@ CREATE TABLE IF NOT EXISTS dept_manager (
 
 -- View table columns and datatypes
 SELECT * FROM dept_manager;
+
+

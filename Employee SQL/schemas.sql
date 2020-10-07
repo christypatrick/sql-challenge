@@ -25,12 +25,12 @@ SELECT * FROM employees;
 -- Create new table - salaries
 CREATE TABLE IF NOT EXISTS salaries (
 	emp_no INT NOT NULL Primary Key,
-	salary INT
+	salary INT,
+	FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
 );
 
 -- View table columns and datatypes
 SELECT * FROM salaries;
-
 
 -- Create new table - departments
 CREATE TABLE IF NOT EXISTS departments (
